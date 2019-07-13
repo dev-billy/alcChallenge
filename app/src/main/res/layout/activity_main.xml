@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:padding="5dp"
+                android:text="Welcome to my App."
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@id/welcomeText"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                android:text="This app was made as a challenge from Andela ALC 4.0"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight='1'
+                app:cardElevation="6dp"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/me"
+                        android:id="@+id/profileBtn1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/profileBtn"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22sp"
+                        android:text="Profile"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight='1'
+                app:cardElevation="6dp"
+                android:padding="6dp"
+                android:elevation="6dp"
+
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/alc"
+                        android:id="@+id/alcBtn1"
+                        android:background="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/alcBtn"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22sp"
+                        android:text="ALC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+    </LinearLayout>
+    
+</ScrollView>
